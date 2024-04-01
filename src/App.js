@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addTask, deleteTask, editTask } from './redux/actions';
+import { addTask, deleteTask, editTask } from './redux/todosSlice';
 import './App.css';
 
 function App() {
