@@ -21,7 +21,7 @@ function App() {
   const handleEditTask = (id, currentText) => {
     const newText = prompt('Редактировать задачу:', currentText);
     if (newText !== null) {
-      dispatch(editTask(id, newText));
+      dispatch(editTask({ id, text: newText }));
     }
   };
 
